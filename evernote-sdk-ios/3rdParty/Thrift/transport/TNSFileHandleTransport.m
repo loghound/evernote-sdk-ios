@@ -66,9 +66,10 @@
 }
 
 
-- (void) write: (uint8_t *) data offset: (unsigned int) offset length: (unsigned int) length
+- (void) write: (const uint8_t *) data offset: (unsigned int) offset length: (unsigned int) length
 {
-  NSData * dataObject = [[NSData alloc] initWithBytesNoCopy: data+offset
+  // NSData is a non-mutable so it's ok to cast it to (void*) and lose the const qualifier 
+  NSData * dataObject = [[NSData alloc] initWithBytesNoCopy: (void*)data+offset
                                                      length: length
                                                freeWhenDone: NO];
 

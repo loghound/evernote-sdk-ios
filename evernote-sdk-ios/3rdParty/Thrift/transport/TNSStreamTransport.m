@@ -64,8 +64,7 @@
   return got;
 }
 
-
-- (void) write: (uint8_t *) data offset: (unsigned int) offset length: (unsigned int) length
+- (void) write: (const uint8_t *) data offset: (unsigned int) offset length: (unsigned int) length
 {
   int got = 0;
   int result = 0;
