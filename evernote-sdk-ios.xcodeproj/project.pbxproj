@@ -106,6 +106,12 @@
 		0BF0CF85152E2601003D6115 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0CF84152E2601003D6115 /* Security.framework */; };
 		0BF0CF8A152E31BA003D6115 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0CF80152E25E1003D6115 /* SSKeychain.m */; };
 		0BF0CF8C152E31CC003D6115 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0CF84152E2601003D6115 /* Security.framework */; };
+		540742FF156B5C7900983F25 /* TNSFileHandleTransport.h in Headers */ = {isa = PBXBuildFile; fileRef = 540742FD156B5C7900983F25 /* TNSFileHandleTransport.h */; };
+		54074300156B5C7900983F25 /* TNSFileHandleTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 540742FE156B5C7900983F25 /* TNSFileHandleTransport.m */; };
+		54074304156B5C8900983F25 /* TSocketClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 54074302156B5C8900983F25 /* TSocketClient.h */; };
+		54074305156B5C8900983F25 /* TSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 54074303156B5C8900983F25 /* TSocketClient.m */; };
+		54074306156B5C9C00983F25 /* TSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 54074303156B5C8900983F25 /* TSocketClient.m */; };
+		54074307156B5CA000983F25 /* TNSFileHandleTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 540742FE156B5C7900983F25 /* TNSFileHandleTransport.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -200,6 +206,10 @@
 		0BF0CF80152E25E1003D6115 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		0BF0CF84152E2601003D6115 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		0BF0CF93152E53E0003D6115 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		540742FD156B5C7900983F25 /* TNSFileHandleTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSFileHandleTransport.h; sourceTree = "<group>"; };
+		540742FE156B5C7900983F25 /* TNSFileHandleTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSFileHandleTransport.m; sourceTree = "<group>"; };
+		54074302156B5C8900983F25 /* TSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSocketClient.h; sourceTree = "<group>"; };
+		54074303156B5C8900983F25 /* TSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSocketClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +317,10 @@
 		0B943F421525015500DB20A3 /* transport */ = {
 			isa = PBXGroup;
 			children = (
+				54074302156B5C8900983F25 /* TSocketClient.h */,
+				54074303156B5C8900983F25 /* TSocketClient.m */,
+				540742FD156B5C7900983F25 /* TNSFileHandleTransport.h */,
+				540742FE156B5C7900983F25 /* TNSFileHandleTransport.m */,
 				0B943F431525015500DB20A3 /* THTTPClient.h */,
 				0B943F441525015500DB20A3 /* THTTPClient.m */,
 				0B943F451525015500DB20A3 /* TMemoryBuffer.h */,
@@ -534,6 +548,8 @@
 				0B345EBE1544633F00A1FDBF /* EvernoteNoteStore.h in Headers */,
 				0B2B9D621544944800E5BD44 /* EvernoteUserStore.h in Headers */,
 				0B2B9D6815449AEE00E5BD44 /* EvernoteSDK.h in Headers */,
+				540742FF156B5C7900983F25 /* TNSFileHandleTransport.h in Headers */,
+				54074304156B5C8900983F25 /* TSocketClient.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,6 +702,8 @@
 				0B345EBF1544633F00A1FDBF /* EvernoteNoteStore.m in Sources */,
 				0B2B9D631544944800E5BD44 /* EvernoteUserStore.m in Sources */,
 				0B2B9D6915449AEE00E5BD44 /* EvernoteSDK.m in Sources */,
+				54074300156B5C7900983F25 /* TNSFileHandleTransport.m in Sources */,
+				54074305156B5C8900983F25 /* TSocketClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,6 +738,8 @@
 				0B345EC01544633F00A1FDBF /* EvernoteNoteStore.m in Sources */,
 				0B2B9D641544944800E5BD44 /* EvernoteUserStore.m in Sources */,
 				0B2B9D6A15449AEE00E5BD44 /* EvernoteSDK.m in Sources */,
+				54074306156B5C9C00983F25 /* TSocketClient.m in Sources */,
+				54074307156B5CA000983F25 /* TNSFileHandleTransport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -943,6 +963,7 @@
 				0BDBBC531550A11A003E6681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
